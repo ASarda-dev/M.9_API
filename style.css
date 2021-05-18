@@ -1,8 +1,12 @@
-:root {
-  --fondo: #686de0;
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+
+:root {
+  --fondo: #39c25b;
+  --boton: #189245;
+  --fondoTexto: rgb(245, 234, 234);
+  --borde: 3px solid rgb(10, 41, 26);
+  --texto: rgb(10, 41, 26);
+}
 
 * {
   box-sizing: border-box;
@@ -17,16 +21,17 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  padding: 20px;
+  padding: 35px;
 }
 .container {
-  background-color: #fff;
-  border-radius: 10px;
+  background-color: var(--fondoTexto);
+  border-radius: 15px;
+  border: var(--borde);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 50px 20px;
+  padding: 40px 20px;
   text-align: center;
   max-width: 100%;
-  width: 800px;
+  width: 700px;
 }
 h3 {
   margin: 0;
@@ -34,21 +39,32 @@ h3 {
   letter-spacing: 2px;
 }
 .joke {
-  font-size: 30px;
+  font-size: 35px;
   letter-spacing: 1px;
   line-height: 40px;
   margin: 50px auto;
   max-width: 600px;
+  color: var(--texto);
 }
 
 .btn {
-  background-color: #9f68e0;
-  border: 0;
+  background-color: var(--boton);
+  border: var(--borde);
   border-radius: 10px;
   padding: 14px 40px;
   font-size: 16px;
+  text-transform: uppercase;
+  color: aliceblue;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px black;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+.btn:hover {
+  background-color: chartreuse;
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px rgb(240, 235, 235);
 }
 .btn:active {
   transform: scale(0.98);
